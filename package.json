@@ -1,5 +1,5 @@
 {
-  "name": "sivillage",
+  "name": "test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,10 +11,11 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**.{js,jsx,ts,tsx,css,scss}": [
-      "prettier --write"
+    "*.{js,jsx,ts,tsx,css,scss}": [
+      "prettier --write",
+      "eslint --fix"
     ]
-  },
+  },  
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",
     "@next/font": "^14.2.6",
@@ -32,25 +33,18 @@
     "next": "^14.2.7",
     "next-auth": "^4.24.7",
     "react": "^18",
-    "react-dom": "^18",
-    "swiper": "^11.1.9",
-    "tailwind-merge": "^2.5.2",
-    "tailwindcss-animate": "^1.0.7"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/node": "20.16.1",
-    "@types/react": "18.3.4",
+    "@types/node": "^20",
+    "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.6",
-    "eslint-config-prettier": "^9.1.0",
     "husky": "^8.0.0",
-    "install": "^0.13.0",
     "lint-staged": "^15.2.9",
-    "npm": "^10.8.2",
     "postcss": "^8",
-    "prettier": "3.3.3",
     "tailwindcss": "^3.4.1",
-    "typescript": "5.5.4"
+    "typescript": "^5"
   }
 }
